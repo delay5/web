@@ -1,35 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Matias Selfbot</title>
-    <meta charset="utf-8" />
+    <meta name="description" content="Alucard Selfbot">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/png" href="img/Favicon.png">
+    <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/alucard.css">
-</head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<body>
-        <div class="caption">
-            <form name="contact" method="POST" data-netlify="true">
-             <p>
-              <label>Your Name: <input type="text" name="name" /></label>   
-            </p>
-            <p>
-                  <label>Your Email: <input type="email" name="email" /></label>
-                 </p>
-             <p>
-                 <label>Your Role: <select name="role[]" multiple>
-                    <option value="follower">Follower</option>
-             </select></label>
-                </p>
-                 <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                 <p>
-                 <button type="submit">Send</button>
-             </p>
-            </form>
+    <script src="https://kit.fontawesome.com/6bfbd8fad0.js" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.particleground.min.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<title>Matias Selfbot</title>
+
+<body class="black white-text">
+    <script>
+        $(document).ready(function() {
+            $('.particles').particleground({
+                dotColor: '#3393FF',
+                lineColor: '#3393FF',
+                density: "400000"
+            });
+        })
+    </script>
+    <div class="navigation">
+        <div class="navbar transparent">
+            <a href="/"><img alt="Matias" src="img/logomati.png" width="240"></a>
+            <ul class="nav navbar-nav navbar-right">
+                <div class="row">
+                    <li><a href="/" class="button">Home <i class="fas fa-home"></i></a></li>
+                    <li><a href="404.html" class="button">Commands <i class="fas fa-cogs"></i></a></li>
+                    <li><a href="404.html" class="button">Support <i class="fab fa-discord"></i></a></li>
+                </div>
+            </ul>
         </div>
+    </div>
+    <div class="particles"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
+<!-- Commands Table -->
+
+<main>
+    <div class="container">
+        <h3 class="light">Guia instalacion Selfbot</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Contacto</th>
+                    <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</main>
 
 </html>
